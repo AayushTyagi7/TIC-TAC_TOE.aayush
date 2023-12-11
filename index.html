@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Basic Tic Tac Toe</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Tic Tac Toe</h1>
-    <div id="board">
-      <div class="row">
-        <div class="cell" onclick="makeMove(0, 0)"></div>
-        <div class="cell" onclick="makeMove(0, 1)"></div>
-        <div class="cell" onclick="makeMove(0, 2)"></div>
-      </div>
-      <div class="row">
-        <div class="cell" onclick="makeMove(1, 0)"></div>
-        <div class="cell" onclick="makeMove(1, 1)"></div>
-        <div class="cell" onclick="makeMove(1, 2)"></div>
-      </div>
-      <div class="row">
-        <div class="cell" onclick="makeMove(2, 0)"></div>
-        <div class="cell" onclick="makeMove(2, 1)"></div>
-        <div class="cell" onclick="makeMove(2, 2)"></div>
-      </div>
-    </div>
-    <button onclick="resetBoard()">Reset</button>
-    <p id="message"></p>
-  </div>
+  <div class="head">
+    <button id="new-game">Tic Tac Toe</button>
+</div>
+   <div class="wrapper">
+       <div class="container">
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+       </div>
+       <button id="restart">Restart</button>
+   </div>
 
-  <script src="script.js"></script>
+   <div class="popup hide">
+       <p id="message">Sample Message</p>
+       <button id="new-game">New Game</button>
+   </div>
+   
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 </html>
